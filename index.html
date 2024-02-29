@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Unigine - Epic Games Made For True Gamers!</title>
+    <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header active" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="./assets/images/VM-Horizontal-Logo.png" width="110" height="53" alt="unigine home">
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#services" class="navbar-link" data-nav-link>Services</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#about" class="navbar-link" data-nav-link>About</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#contact" class="navbar-link" data-nav-link>Contact Us</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <a href="#" class="btn" data-btn>join our team</a>
+
+            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <!-- 
+        - #bg 
+      -->
+            <div class="container-fluid">
+                <div class="hero-banner">
+                    <video autoplay muted loop id="myVideo" style="width: 100%;">
+                        <source src="./assets/images/videos/4K_40.mp4" style="width: 100%;" type="video/mp4">
+                    </video>
+                    <div class="text-muted">
+                        <div id="muteButton" class="mute-button" onclick="toggleMute()">
+                            <img id="muteIcon" style="width: 100%;" src="assets/images/vm-bg.svg" alt="Mute">
+                        </div>
+                    </div>
+                    <div class="vm-heading">
+                        <h1 class="h1 title hero-title golden" data-heading="leads. done right.">leads. done right.</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero has-before main-vm">
+                <div class="container-main">
+                    <div class="card-container phoenix-card">
+                        <img class="avatar" src="./assets/images/pngwing.com.png"></img>
+                        <div class="card phoenix"></div>
+                    </div>
+                    <div class="card-container card-main">
+                        <h2 class="h2 section-title" data-reveal="bottom">
+                            Vereigen <span class="span">Media</span>
+                        </h2>
+                        <br>
+                        <p>At Vereigen Media, we understand that in the ever-evolving world of B2B business, leads are
+                            the lifeblood of growth. That's why we're here to transform your lead generation efforts
+                            into
+                            a streamlined, results-driven powerhouse. With our expertise, cutting-edge strategies, and
+                            relentless dedication, we bring your ideal clients to your doorstep.</p>
+                        <!-- <img class="avatar" src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltceaa6cf20d328bd5/5eb7cdc1b1f2e27c950d2aaa/V_AGENTS_587x900_Jett.png"></img>
+                      <div class="card jett"></div> -->
+                    </div>
+                </div>
+                <!-- <div class="container">
+                    <p class="section-subtitle">Enjoy The Games</p>
+
+                    <h1 class="h1 title hero-title">Epic Games Made For <br> True Gamers!</h1>
+
+                    <a href="#" class="btn" data-btn>Join With Us</a>
+
+                    <div class="hero-banner">
+                        <img src="./assets/images/hero-banner.png" width="850" height="414" alt="hero banner"
+                            class="w-100">
+
+                        <img src="./assets/images/hero-banner-bg.png" alt="" class="hero-banner-bg">
+                    </div>
+
+                </div> -->
+            </div>
+            <section class="section upcoming" aria-labelledby="upcoming-label" id="tournament">
+                <h2 class="h2 section-title" data-reveal="bottom">
+                    Why Choose <span class="span">Vereigen Media?</span>
+                </h2>
+                <div class="container">
+                    <div id="bg"></div>
+                    <div id="logo"></div>
+                    <div class="wrapper">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" style="border: 3px solid rgb(61 48 0 / 74%);">
+                                    <img src="assets/images/Golden Bullseye Symbol.I09.watermarked.2k.png" />
+                                    <div class="swiper-overlay"></div>
+                                    <div class="swiper-description">
+                                        <h1 class="thecrown">Targeted Lead Generation:</h1>
+                                        <p class="thecrowndes">Attract high-quality B2B leads that matter. We tailor our
+                                            strategies to pinpoint your ideal
+                                            audience, ensuring every lead is a potential game-changer.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" style="border: 3px solid rgb(61 48 0 / 74%);">
+                                    <img src="assets/images/Gold Cloud Data Transfer Icon.I01.watermarked.2k.png" />
+                                    <div class="swiper-overlay"></div>
+                                    <div class="swiper-description">
+                                        <h1 class="thecrown">Data-Driven Approach:</h1>
+                                        <p class="thecrowndes">We don't guess; we analyze. Our data-driven methodologies
+                                            fine-tune your lead generation
+                                            efforts for maximum ROI.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" style="border: 3px solid rgb(61 48 0 / 74%);">
+                                    <img
+                                        src="assets/images/Square Puzzle Game Solution Symbol.I01.watermarked.2k.png" />
+                                    <div class="swiper-overlay"></div>
+                                    <div class="swiper-description">
+                                        <h1 class="thecrown">Customized Solutions</h1>
+                                        <p class="thecrowndes">our business is unique, and so are your lead generation
+                                            needs. Our solutions are tailored to
+                                            fit your industry, goals, and challenges.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" style="border: 3px solid rgb(61 48 0 / 74%);">
+                                    <img src="assets/images/Team With Thumbs Up Symbol.I01.watermarked.2k.png" />
+                                    <div class="swiper-overlay"></div>
+                                    <div class="swiper-description">
+                                        <h1 class="thecrown">Expert Team:</h1>
+                                        <p class="thecrowndes">Our team of seasoned professionals is obsessed with lead
+                                            generation. We're on the cutting
+                                            edge of industry trends, so you don't have to be.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next" style="width: 5%; right: 0; height: 11%;"></div>
+                            <div class="swiper-button-prev" style="width: 5%; left: 0; height: 11%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section news" aria-label="our latest news" id="news">
+                <div class="container">
+
+                    <h2 class="h2 section-title" data-reveal="bottom">
+                        Hear What Our Clients Say <span class="span">Clients Say</span>
+                    </h2>
+
+                    <ul class="news-list">
+                        <li data-reveal="bottom" style="border: 2px solid gold;">
+                            <div class="news-card">
+
+                                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                                    <img src="./assets/images/jhon-smit.jpg" width="600" height="400" loading="lazy"
+                                        alt="Innovative Business All Over The World." class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+                                    <a href="#" class="card-tag">CEO, XYZ Corporation</a>
+                                    <ul class="card-meta-list">
+                                        <li class="card-meta-item">
+                                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                                            <p class="card-meta-text">John Smith</p>
+                                        </li>
+                                    </ul>
+                                    <p class="card-text">
+                                        "Vereigen Media has transformed our lead generation game. The results speak for
+                                        themselves. Highly recommended!"
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-reveal="bottom" style="border: 2px solid gold;">
+                            <div class="news-card">
+
+                                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                                    <img src="./assets/images/jane-doe.jpg" width="600" height="400" loading="lazy"
+                                        alt="How To Start Initiating An Startup In Few Days." class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+                                    <a href="#" class="card-tag">CMO, ABC Enterprises</a>
+                                    <ul class="card-meta-list">
+                                        <li class="card-meta-item">
+                                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                                            <p class="card-meta-text">Jane Doe</p>
+                                        </li>
+                                    </ul>
+                                    <p class="card-text">
+                                        "Vereigen Media has consistently delivered high-quality leads. Their dedication
+                                        to our success is unmatched."
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <div class="contact">
+        <h2 class="contact-title">Ready to Elevate Your B2B Lead Generation?<br>
+            Get Started Today
+        </h2>
+        <div class="contact-form">
+          <label for="name">
+            <span class="input-name">
+              First Name:
+            </span>
+            <input type="text" name="name" id="name" class="name" placeholder="Jhon">
+          </label>
+          <label for="name">
+            <span class="input-name">
+              Last Name:
+            </span>
+            <input type="text" name="name" id="name" class="name" placeholder="Doe">
+          </label>
+          <label for="email">
+            <span class="input-name">
+              Email address:
+            </span>
+            <input type="email" name="email" id="email" class="email" placeholder="xyz@gmail.com">
+          </label>
+          <label for="name">
+            <span class="input-name">
+              Company Name:
+            </span>
+            <input type="text" name="name" id="name" class="name" placeholder="xyz pvt ltd">
+          </label>
+          <label for="name">
+            <span class="input-name">
+              Phone Number:
+            </span>
+            <input type="number" name="name" id="name" class="name" placeholder="1234567890">
+          </label>
+          <label for="preferred-Contact">
+            <span class="input-name">
+              Preferred Contact Method:
+            </span>
+            <select>
+                <option value="Select">Select</option>
+                <option value="Email">Phone</option>
+                <option value="Email">Email</option>
+            </select>
+        </label>
+          <button class="btn send-btn">
+            Send
+          </button>
+        </div>
+      </div>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer" id="contact">
+
+        <div class="section footer-top">
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">
+                        <img src="./assets/images/VM-Horizontal-Logo.png" width="150" height="73" loading="lazy" alt="Unigine logo">
+                    </a>
+
+                    <p class="footer-text">
+                        Our success in creating business solutions is due in large part to our talented and highly
+                        committed team.
+                    </p>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-list">
+
+                    <p class="title footer-list-title has-after">Menu</p>
+
+                    <ul>
+
+                        <li>
+                            <a href="#" class="footer-link">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Services</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Contact Us</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-list">
+
+                    <p class="title footer-list-title has-after">Contact Us</p>
+
+                    <div class="contact-item">
+                        <span class="span">Location:</span>
+
+                        <address class="contact-link">
+                            1401 Lavaca Street #800 Austin, TX 78701
+                        </address>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="span">Join Us:</span>
+
+                        <a href="mailto:Info@unigine.com" class="contact-link">info@vereigenmedia.com</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="span">Phone:</span>
+
+                        <a href="tel:+12345678910" class="contact-link"> +1 512-240-2212</a>
+                    </div>
+
+                </div>
+
+                <div class="footer-list">
+
+                    <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+                    <form action="./index.html" method="get" class="footer-form">
+                        <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+                            class="input-field">
+
+                        <button type="submit" class="btn" data-btn>Subscribe Now</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                    Copyright: © 2023 Vereigen Media. All rights reserved.
+                </p>
+
+            </div>
+        </div>
+
+    </footer>
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+    <div class="cursor" data-cursor></div>
+    <script src="./assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
