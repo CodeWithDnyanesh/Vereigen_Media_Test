@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>VEREIGEN MEDIA</title>
+    <meta name="title" content="VEREIGEN MEDIA">
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/contact-us.css">
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header active" data-header>
+        <div class="container">
+
+            <a href="index.html" class="logo">
+                <img src="./assets/images/VM-Horizontal-Logo.png" width="110" height="53" alt="VEREIGEN MEDIA">
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="services.html" class="navbar-link" data-nav-link>Services</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="about.html" class="navbar-link" data-nav-link>About</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="contact-us.html" class="navbar-link" data-nav-link>Contact Us</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <a href="contact-us.html" class="btn" data-btn>join our team</a>
+
+            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <!-- 
+        - #bg 
+      -->
+            <section class="section" aria-label="our latest news" id="news">
+                <div class="container">
+                    <h2 class="h2 section-title" data-reveal="bottom">
+                        CONTACT <span class="span">US</span>
+                    </h2>
+                    <form action="#" method="post">
+                        <div class="column">
+                          <label for="the-name">Your Name</label>
+                          <input type="text" name="name" id="the-name" placeholder="Jhon">
+                      
+                          <label for="the-email">Email Address</label>
+                          <input type="email" name="email" id="the-email" placeholder="xyz@gmail.com">
+                      
+                          <label for="the-phone">Phone Number</label>
+                          <input type="tel" name="phone" id="the-phone" placeholder="1234567890">
+                      
+                          <label for="the-reason">How can we help you?</label>
+                          <select name="reason" id="the-reason">
+                          <option value="">Choose one</option>
+                          <option value="web">I need web design services</option>
+                          <option value="video">I need you to produce a video</option>
+                          <option value="3d">I need 3D polygon things</option>
+                        </select>
+                        </div>
+                        <div class="column">
+                          <label for="the-message">Message</label>
+                          <textarea name="message" id="the-message"></textarea>
+                          <label>
+                          <input type="checkbox" name="newsletter" value="yes"> Join our mailing list?
+                          </label>
+                          <button type="submit" class="btn" value="Send Message">Send Message</button>
+                        </div>
+                      </form>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+  <div class="container">
+    <div id="bg"></div>
+    <div id="logo"></div>
+</div>
+    <footer class="footer" id="contact">
+
+        <div class="section footer-top">
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="logo">
+                        <img src="./assets/images/VM-Horizontal-Logo.png" width="150" height="73" loading="lazy" alt="VEREIGEN MEDIA logo">
+                    </a>
+
+                    <p class="footer-text">
+                        Our success in creating business solutions is due in large part to our talented and highly
+                        committed team.
+                    </p>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-list">
+
+                    <p class="title footer-list-title has-after">Menu</p>
+
+                    <ul>
+
+                        <li>
+                            <a href="#" class="footer-link">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Services</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Contact Us</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-list">
+
+                    <p class="title footer-list-title has-after">Contact Us</p>
+
+                    <div class="contact-item">
+                        <span class="span">Location:</span>
+
+                        <address class="contact-link">
+                            1401 Lavaca Street #800 Austin, TX 78701
+                        </address>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="span">Join Us:</span>
+
+                        <a href="info@vereigenmedia.com" class="contact-link">info@vereigenmedia.com</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="span">Phone:</span>
+
+                        <a href="tel:+12345678910" class="contact-link"> +1 512-240-2212</a>
+                    </div>
+
+                </div>
+
+                <div class="footer-list">
+
+                    <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+                    <form action="./index.html" method="get" class="footer-form">
+                        <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+                            class="input-field">
+
+                        <button type="submit" class="btn" data-btn>Subscribe Now</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                    Copyright: © 2023 Vereigen Media. All rights reserved.
+                </p>
+
+            </div>
+        </div>
+
+    </footer>
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+    <div class="cursor" data-cursor></div>
+    <script src="./assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
